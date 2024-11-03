@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu VideoTeca Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Tu VideoTeca</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="imagenes/menu.png" class="menu-icono" alt="Icono del menú"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes/car.svg" id="img-carrito" alt="Carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contenido de los productos -->
+        <div class="header-content container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <div class="header-txt">
+                            <h1>Bienvenido a Tu VideoTeca Web</h1>
+                            <a href="#" class="btn">Información</a>
+                            <p>Un lugar donde vas a poder comprar, alquilar o almacenar tus series y peliculas favoritas.</p>
+                        </div>
+                        <div class="header-img">
+                            <img src="imagenes/cine2.png" alt="El silencio de los inocentes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones de navegación de la galería -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+
+    <hr>
+    <section class="promos container">
+        <h2>Promociones</h2>
+        <!-- Contenido de promociones aquí -->
+        <div class="categorie">
+            <div class="categorie-1">
+                <h3>Promo 1</h3>
+                <div class="precio">
+                    <p class="precio-1">$3000</p>
+                </div>
+                <a href="#" class="agregar-carrito btn-6" data-id="1" >Agregar al carrito</a>
+            </div> 
+            <div class="categorie-img">
+                <img src="imagenes/La trampa.png" alt="">
+            </div>
+            <div class="categorie">
+                <div class="categorie-1">
+                </div>
+    
+
+            </div>
+    </section>
+
+    <hr>
+    <section class="products container">
+        <h2>Productos</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <!-- Estructura de producto individual -->
+                <div class="swiper-slide">
+                    <div class="Productos">
+                        <img src="imagenes/El laberinto del  Fauno.png" alt="El laberinto del Fauno">
+                        <div class="product-txt">
+                            <h3>El laberinto del Fauno</h3>
+                            <p>Guillermo del Toro</p>
+                            <p class="precio">$3000</p>
+                            <a href="https://www.youtube.com/watch?v=FGzvvUBXj5M" class="btn">Trailer</a>
+                            <a href="#" class="agregar-carrito btn" data-id="3">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <div class="link-section">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </div>
+        <div class="link-section">
+            <h3></h3>
+            <p>Copyright© 1995-2024 Samsung. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #12123a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.swiper-slider {
+    padding: 0 80px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #201877;
+}
+
+.swiper-pagination-bullet {
+    background-color: #e41b1b;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0d0c38;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    color: cadetblue;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+    color: #050505;
+}
+
+.menu .navbar ul li a:hover {
+    color: #0a0409;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 35px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none; /* Hazlo `block` para dispositivos móviles si es necesario */
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(50px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgba(78, 72, 80, 0.5);
+    padding: 20px;
+    min-width: 400px;
+}
